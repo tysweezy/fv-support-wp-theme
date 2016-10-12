@@ -1,20 +1,9 @@
 <?php
 /**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * e.g., it puts together the home page when no home.php file exists.
- *
- * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
+ * Template Name: Blog Template
  *
  */
-
 get_header(); ?>
-
-	<div class="container">
-		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -24,9 +13,11 @@ get_header(); ?>
 				</header>
 			<?php endif; ?>
 
-			<?php while ( have_posts() ) : the_post(); ?>
-              
-			  <a href="<?php the_permalink(); ?>"><?php the_title(); ?><a>
+          
+			<?php while ( have_posts() ) : the_post(); ?> 
+			  <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?><a></h3>
+
+              <span class="entry-date"><?php echo get_the_date(); ?></span>
 			<?php endwhile; ?>
 
         <?php
@@ -43,8 +34,5 @@ get_header(); ?>
 
 		endif;
 		?>
-
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
-
+        
 <?php get_footer(); ?>

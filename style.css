@@ -8,3 +8,79 @@ Version: 0.0.1
 Tags: blog, two-columns, left-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
 */
 
+header.main-header {
+  height: 60px;
+  width: 100%;
+}
+
+.brand {
+  text-align: center;
+}
+
+header.main-header img {
+  max-width: 100%;
+  height: 35px;
+  margin-top: 10px;
+}
+
+.banner {
+  background: url(http://support.dev/wp-content/uploads/2016/10/banner.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  display: table;
+}
+
+.banner h1 {
+  text-align: center;
+  color: #fff;
+  text-shadow: 3px 3px 2px #000;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.items a {
+  display: block;
+  background: #ccc;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  color: #fff;
+  transition: opacity .5s ease-out;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.items a:hover {
+  opacity: 0.6;
+}
+
+span.item-title {
+  background: rgba(0, 0, 0, .8);
+  padding: 10px;
+}
+
+#survey-request {
+  background: url(http://support.dev/wp-content/uploads/2016/10/survey-request.jpg) no-repeat;
+  background-size: cover;
+}
+
+#kinesis {
+  background: url(http://support.dev/wp-content/uploads/2016/10/kinesis.jpg) no-repeat;
+  background-size: cover;
+}
+
+#survey-themes {
+  background: url(http://support.dev/wp-content/uploads/2016/10/survey-themes.jpg) no-repeat;
+  background-size: cover;
+}
+
+#survey-style {
+  background: url(http://activatesaga.com/fv/support-dev/img/style-guide.jpg) no-repeat;
+  background-size: cover;
+}
+
+#blog {
+  background: url(http://support.dev/wp-content/uploads/2016/10/blog.jpg) no-repeat;
+  background-size: cover;
+}

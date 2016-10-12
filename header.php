@@ -19,25 +19,20 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 
-		<header id="masthead" class="site-header" role="banner">
-			<div class="site-branding">
+		<header id="masthead" class="main-header" role="banner">
 				<?php
 
 					if ( is_front_page() && is_home() ) : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<div class="brand"><a href="/"><img src="http://support.dev/wp-content/uploads/2016/10/focusvision.png" alt="FocusVision"></a></div>
 					<?php else : ?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+						<div class="brand"><a href="/"><img src="http://support.dev/wp-content/uploads/2016/10/focusvision.png" alt="FocusVision"></a></div>
 					<?php endif;
 
-					$description = get_bloginfo( 'description', 'display' );
-					if ( $description || is_customize_preview() ) : ?>
-						<p class="site-description"><?php echo $description; ?></p>
-					<?php endif;
+			
 				?>
-				<button class="secondary-toggle"><?php _e( 'Menu and widgets', 'twentyfifteen' ); ?></button>
-			</div><!-- .site-branding -->
+
 		</header><!-- .site-header -->
 
 
 
-	<div id="content" class="site-content">
+	<div class="content">
